@@ -1,12 +1,33 @@
 body{
-    background-color: rgb(50, 109, 238);
+    background-color: rgb(14, 243, 117);
 }
 header{
-    background-color: rgb(8, 58, 114);
+    background-color: rgb(4, 32, 65);
 }
 main{
-    background-color: blue;
+    background-color: rgb(253, 28, 197);
 }
 section{
     background-color: blueviolet;
+}
+Style
+body {
+    background-color: #a0ec11;
+    color: #7fecc2;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #eb30bc;
+    color: rgb(21, 137, 214);
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    color: #f51cbf;
 }
