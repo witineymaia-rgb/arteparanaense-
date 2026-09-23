@@ -89,3 +89,19 @@ footer {
     padding: 20px;
     margin-top: 30px;
 }
+button {
+    background-color: #6b2d5c;
+    color: rgb(20, 18, 18);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #9b4d83;
+    }
+    -curtir {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+}
