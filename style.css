@@ -1,15 +1,29 @@
-body {
-    background-color: #9beb1c;
-    color: #222222;
-    font-family: Arial, sans-serif;
+
+:root {
+    --cor-fundo : #f4f1ea;
+    --coor-texto: #222222;
+    --cor-principal:#6b2d5c;
+    --cor-secundaria:#9b4d83;
+    --cor-hover:#c77dff;
+    --cor-suprficie:white;
+    --cor-card:#f3d9fa;
+    --cor-legenda:#555555;
+    --cor-clra:white;
+    --cor-roape:#222222;
+}
+
+body{
+    background-color:var(--cor-fundo);
+    color:var(--cor-texto);
+    font-family:Arial, sans-serif;
     margin: 0;
 }
 
 header {
-    background-color: #6b2d5c;
-    color: rgb(166, 129, 233);
+    background-color: var(--cor-principal);
+    color: var(--cor-clara);
     text-align: center;
-    padding: 30px;
+    paddign: 30px;
 }
 
 h1 {
@@ -30,9 +44,9 @@ nav {
 }
 
 nav a {
-    color: rgb(36, 134, 245);
+    color: var(--cor-clara);
     text-decoration: none;
-    background-color: #f575cf;
+    background-color: var(--cor-secundaria);
     padding: 10px 15px;
     border-radius: 8px;
     margin: 5px;
@@ -40,7 +54,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #c77dff;
+    background-color: var(--cor-hover); 
 }
 
 main {
@@ -49,7 +63,7 @@ main {
 }
 
 section {
-    background-color: rgb(245, 20, 189);
+    background-color: var(--cor-suprficie);
     margin: 20px 0;
     padding: 20px;
     border-radius: 12px;
@@ -71,10 +85,10 @@ figcaption {
 }
 
 .card {
-    background-color: #bd17eb;
+    background-color: var(--cor-card);
     padding: 15px;
     margin: 15px 0;
-    border-left: 6px solid #e62bb7;
+    border-left: 6px solid var(--cor-principal)
     border-radius: 10px;
 }
 
@@ -83,15 +97,15 @@ figcaption {
 }
 
 footer {
-    background-color: #222222;
-    color: rgb(70, 38, 212);
+    background-color: var(--cor-rodape);
+    color: var(--cor-clara);
     text-align: center;
     padding: 20px;
     margin-top: 30px;
 }
 button {
-    background-color: #6b2d5c;
-    color: rgb(20, 18, 18);
+    background-color: var(--cor-principal);
+    color: var(--cor-clara);
     border: none;
     padding: 10px 15px;
     border-radius: 8px;
