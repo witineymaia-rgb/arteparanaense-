@@ -1,14 +1,14 @@
 
 :root {
-    --cor-fundo : #f4f1ea;
+    --cor-fundo : #d24ffa;
     --coor-texto: #222222;
-    --cor-principal:#6b2d5c;
-    --cor-secundaria:#9b4d83;
+    --cor-principal:#bb098e;
+    --cor-secundaria:#f32eb8;
     --cor-hover:#c77dff;
-    --cor-suprficie:white;
-    --cor-card:#f3d9fa;
-    --cor-legenda:#555555;
-    --cor-clra:white;
+    --cor-suprficie:rgb(19, 3, 3);
+    --cor-card:#d278eb;
+    --cor-legenda:#c4b5b5;
+    --cor-clra:rgb(230, 6, 250);
     --cor-roape:#222222;
 }
 
@@ -90,6 +90,7 @@ figcaption {
     margin: 15px 0;
     border-left: 6px solid var(--cor-principal)
     border-radius: 10px;
+    flex: 1 1 300px;
 }
 
 .card h3 {
