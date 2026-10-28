@@ -14,6 +14,12 @@ botoesCurtir.forEach(function(botaoCurtir){
             }
     }
     });
+
+    const btnTema = document.querySelector(".btn-tema");
+    btnTema.addEvenlistener("click", mudarTema);
+    function mudarTema(){
+        document.body.classList.toggle("tema-escuro");
+    }
     
         
         
