@@ -131,3 +131,11 @@ cards-curiosidades{
     gap: 20px;
     flex-wrap: wrap;
 }
+btn-tema {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 22px;
+}
