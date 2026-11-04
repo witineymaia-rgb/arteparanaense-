@@ -1,22 +1,28 @@
 :root {
-    --cor-fundo: #762e85;
-    --cor-texto: #110303;
-    --cor-principal: #128a22;
+    --cor-fundo: #f4edf8;
+    --cor-texto: #1a1a1a;
+    --cor-principal: #5e2a84;
     --cor-secundaria: #371aa1;
-    --cor-hover: #c77dff;
-    --cor-superficie: rgb(84, 102, 34);
+    --cor-hover: #8c43bf;
+    --cor-superficie: #ffffff;
     --cor-card: #f3d9fa;
     --cor-legenda: #555555;
-    --cor-clara: rgb(71, 4, 57);
+    --cor-clara: #ffffff;
     --cor-rodape: #222222;
 }
 
+/* Tema Escuro */
 .tema-escuro {
     --cor-fundo: #121212;
     --cor-texto: #f5f5f5;
-    --cor-principal: #d7a6ca;
+    --cor-principal: #8c43bf;
+    --cor-secundaria: #5333c8;
+    --cor-hover: #a855f7;
     --cor-superficie: #1e1e1e;
     --cor-card: #2b2530;
+    --cor-legenda: #b0b0b0;
+    --cor-clara: #ffffff;
+    --cor-rodape: #0a0a0a;
 }
 
 body {
@@ -24,6 +30,7 @@ body {
     color: var(--cor-texto);
     font-family: Arial, sans-serif;
     margin: 0;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 header {
@@ -35,10 +42,15 @@ header {
 
 h1 {
     font-size: 36px;
+    margin-bottom: 10px;
 }
 
 h2 {
-    color: #c03fa0;
+    color: var(--cor-principal);
+}
+
+.tema-escuro h2 {
+    color: #d7a6ca;
 }
 
 p {
@@ -58,6 +70,7 @@ nav a {
     border-radius: 8px;
     margin: 5px;
     display: inline-block;
+    transition: background-color 0.2s;
 }
 
 nav a:hover {
@@ -66,7 +79,7 @@ nav a:hover {
 
 main {
     width: 80%;
-    margin: auto;
+    margin: 20px auto;
 }
 
 section {
@@ -74,11 +87,13 @@ section {
     margin: 20px 0;
     padding: 20px;
     border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 img {
     width: 100%;
     max-width: 600px;
+    height: auto;
     display: block;
     margin: auto;
     border-radius: 12px;
@@ -89,6 +104,10 @@ figcaption {
     font-size: 14px;
     color: var(--cor-legenda);
     margin-top: 8px;
+}
+
+figcaption a {
+    color: inherit;
 }
 
 .card {
@@ -119,15 +138,17 @@ button {
     padding: 10px 15px;
     border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
 }
 
 button:hover {
-    background-color: #9b4d83;
+    background-color: var(--cor-hover);
 }
 
-.btn-curtir {
+/* Suporte para as duas classes de botão curtir */
+.curtir, .btn-curtir {
     display: block;
-    width: fit-content;
     margin: 20px auto;
 }
 
@@ -136,6 +157,12 @@ button:hover {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.galeria figure {
+    margin: 0;
+    max-width: 45%;
+    min-width: 280px;
 }
 
 .cards-curiosidades {
@@ -152,4 +179,8 @@ button:hover {
     height: 50px;
     border-radius: 50%;
     font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
