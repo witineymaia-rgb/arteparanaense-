@@ -3,12 +3,12 @@
     --cor-texto: #1a1a1a;
     --cor-principal: #c36eff;
     --cor-secundaria: #3ee2e2;
-    --cor-hover: #9403fc;
+    --cor-hover: #bd00c4;
     --cor-superficie: #c600d8;
     --cor-card: #c40f9c;
     --cor-legenda: #555555;
     --cor-clara: #eda3ff;
-    --cor-rodape: #3a1313;
+    --cor-rodape: hsl(310, 94%, 56%);
 }
 
 .tema-escuro {
